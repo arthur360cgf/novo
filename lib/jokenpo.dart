@@ -1,5 +1,4 @@
 import 'dart:math';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Joken extends StatefulWidget {
@@ -51,6 +50,7 @@ class _JokenState extends State<Joken> {
         });
         break;
       default:
+        //imagem de interrogação do computador
         setState(() {
           this._imageApp = AssetImage("assets/images/inter.jpeg");
         });
