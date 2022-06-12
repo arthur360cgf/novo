@@ -12,7 +12,9 @@ class Joken extends StatefulWidget {
 class _JokenState extends State<Joken> {
   //variáveis
   //imagem do aplicativo
-  var _imageApp = AssetImage("assets/images/inter.jpeg");
+  var _imageApp = AssetImage(
+    "assets/images/inter.jpeg",
+  );
 
   //mensagem pra escolher uma opção
   var _mesage = "Escolha uma opção";
@@ -46,6 +48,11 @@ class _JokenState extends State<Joken> {
       case "tesoura":
         setState(() {
           this._imageApp = AssetImage("assets/images/tesoura.jpeg");
+        });
+        break;
+      default:
+        setState(() {
+          this._imageApp = AssetImage("assets/images/inter.jpeg");
         });
     }
     // Aqui será validado os casos de Jogadas do ganhador
